@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 31px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  transition: color var(--anim-main);
+
+  color: var(--light-txt-color);
+  background-color: var(--accent-bg-color);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-bg-btn);
+  }
+}
