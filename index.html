@@ -21,7 +21,7 @@
   </head>
   <body class="page">
     <!--Шапка сайту-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <a class="logo__header" href="index.html"> <span class="logo__special">Web</span>Studio</a>
         <nav class="nav">
@@ -53,7 +53,7 @@
         </nav>
         <ul class="nav__list-address list-address">
           <li class="nav__item">
-            <a class="nav__link link " href="mailto:info@devstudio.com">
+            <a class="nav__link link" href="mailto:info@devstudio.com">
               <svg class="nav__icon" width="16px" height="12px">
                 <use href="./images/icon.svg#mail"></use>
               </svg>
@@ -69,8 +69,19 @@
             ></li
           >
         </ul>
+
+        <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icon.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <!--Основний контент-->
     <main class="main">
@@ -252,16 +263,32 @@
         </div>
       </section>
       <!--Наша команда-->
-      <!-- <section class="team__section section">
+      <section class="team__section section">
         <div class="team__container container">
           <h2 class="headline">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item list-item">
-              <img src="./images/team/img1.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <img
+                class="teem__img"
+                srcset="
+                  ./images/team/img_sm-1-450.jpg 450w,
+                  ./images/team/img_sm-1-900.jpg 900w,
+                  ./images/team/img_sm-1-354.jpg 354w,
+                  ./images/team/img_sm-1-708.jpg 708w,
+                  ./images/team/img_sm-1-270.jpg 270w,
+                  ./images/team/img_sm-1-540.jpg 540w
+                "
+                sizes=" (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/team/img_sm-1-450.jpg"
+                alt="Ігор Дем'яненко"
+              />
               <div class="team">
                 <h3 class="team__headline-team">Ігор Дем'яненко</h3>
                 <p class="team__headline-text" lang="en">Product Designer</p>
-               
+
                 <ul class="list our-team-list">
                   <li>
                     <a
@@ -319,11 +346,27 @@
               </div>
             </li>
             <li class="team__item list-item">
-              <img src="./images/team/img2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <img
+                class="teem__img"
+                srcset="
+                  ./images/team/img_sm-2-450.jpg 450w,
+                  ./images/team/img_sm-2-900.jpg 900w,
+                  ./images/team/img_sm-2-354.jpg 354w,
+                  ./images/team/img_sm-2-708.jpg 708w,
+                  ./images/team/img_sm-2-270.jpg 270w,
+                  ./images/team/img_sm-2-540.jpg 540w
+                "
+                sizes=" (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/team/img_sm-2-450.jpg"
+                alt="Ольга Рєпіна"
+              />
               <div class="team">
                 <h3 class="team__headline-team">Ольга Рєпіна</h3>
                 <p class="team__headline-text" lang="en">Frontend Developer</p>
-               
+
                 <ul class="list our-team-list">
                   <li>
                     <a
@@ -381,11 +424,27 @@
               </div>
             </li>
             <li class="team__item list-item">
-              <img src="./images/team/img3.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <img
+                class="teem__img"
+                srcset="
+                  ./images/team/img_sm-3-450.jpg 450w,
+                  ./images/team/img_sm-3-900.jpg 900w,
+                  ./images/team/img_sm-3-354.jpg 354w,
+                  ./images/team/img_sm-3-708.jpg 708w,
+                  ./images/team/img_sm-3-270.jpg 270w,
+                  ./images/team/img_sm-3-540.jpg 540w
+                "
+                sizes=" (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/team/img_sm-3-450.jpg"
+                alt="Микола Тарасов"
+              />
               <div class="team">
                 <h3 class="team__headline-team">Микола Тарасов</h3>
                 <p class="team__headline-text" lang="en">Marketing</p>
-               
+
                 <ul class="list our-team-list">
                   <li>
                     <a
@@ -443,11 +502,27 @@
               </div>
             </li>
             <li class="team__item list-item">
-              <img src="./images/team/img4.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              <img
+                class="teem__img"
+                srcset="
+                  ./images/team/img_sm-4-450.jpg 450w,
+                  ./images/team/img_sm-4-900.jpg 900w,
+                  ./images/team/img_sm-4-354.jpg 354w,
+                  ./images/team/img_sm-4-708.jpg 708w,
+                  ./images/team/img_sm-4-270.jpg 270w,
+                  ./images/team/img_sm-4-540.jpg 540w
+                "
+                sizes=" (min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 
+                100vw"
+                src="./images/team/img_sm-4-450.jpg"
+                alt="Михайло Єрмаков"
+              />
               <div class="team">
                 <h3 class="team__headline-team">Михайло Єрмаков</h3>
                 <p class="team__headline-text" lang="en">UI Designer</p>
-                
+
                 <ul class="list our-team-list">
                   <li>
                     <a
@@ -506,7 +581,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <!-- Постійні клієнти -->
       <section class="customers__section">
         <h2 class="customers">Постійні клієнти</h2>
@@ -646,6 +722,44 @@
       </div>
     </footer> -->
 
+    <!-- Мобільне меню -->
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/icon.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu list">
+        <li><a href="./index.html" class="menu__link link">Студія</a></li>
+        <li><a href="./portfolio.html" class="menu__link link">Портфоліо</a></li>
+        <li><a href="" class="menu__link link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile__address list">
+        <li><a href="tel:+380961111111" class="tel__link link">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="mail__link link">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile__socials list">
+        <li><a href="" class="socials__link link">Instagram</a></li>
+        <span class="line"></span>
+        <li><a href="" class="socials__link link">Twitter</a></li>
+        <span class="line"></span>
+        <li><a href="" class="socials__link link">Facebook</a></li>
+        <span class="line"></span>
+        <li><a href="" class="socials__link link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <!-- Мобільне меню -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
