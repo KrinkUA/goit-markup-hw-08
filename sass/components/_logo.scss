@@ -37,7 +37,12 @@
 }
 
 .logo__footer {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   color: var(--light-txt-color);
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
