@@ -1,14 +1,37 @@
 .subcat__section {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__choice {
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
 
-  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+    row-gap: 15px;
+    column-gap: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__list {
@@ -16,7 +39,6 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .portfolio__link {
@@ -39,6 +61,21 @@
   height: 100%;
   background-color: var(--accent-bg-color);
   transform: translateY(0%);
+}
+
+.link-img {
+  width: 450px;
+  height: 294px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .subcat__contant {
