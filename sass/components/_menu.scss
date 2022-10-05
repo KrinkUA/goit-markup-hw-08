@@ -103,6 +103,8 @@
 .mobile__socials {
   display: flex;
   align-items: center;
+  
+  
 }
 
 .socials__link {
@@ -110,6 +112,20 @@
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
+  gap: 20px;
+  
 
+  
   color: var(--accent-txt-color);
+}
+
+.socials__item{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  
+
+  &:last-child{
+    border-right: 0;
+  }
 }
