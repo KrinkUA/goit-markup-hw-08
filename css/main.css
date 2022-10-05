@@ -1000,9 +1000,20 @@ address {
 
 .subcat__contant {
   padding: 20px 24px;
+  width: 450px;
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+}
+@media screen and (min-width: 768px) {
+  .subcat__contant {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subcat__contant {
+    width: 370px;
+  }
 }
 
 .subcat__title {
