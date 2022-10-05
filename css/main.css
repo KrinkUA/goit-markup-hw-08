@@ -253,12 +253,8 @@ address {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.footer__group {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__group {
@@ -272,9 +268,25 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 165px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer__address {
     display: -webkit-box;
@@ -300,12 +312,6 @@ address {
   color: var(--accent-txt-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .address {
-    padding-bottom: 60px;
-  }
-}
-
 .address__text,
 .address__list {
   list-style: none;
@@ -319,7 +325,6 @@ address {
 
 .address__list {
   color: rgba(255, 255, 255, 0.6);
-  margin: 0;
 }
 
 .address__item {
@@ -380,7 +385,6 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -458,6 +462,11 @@ address {
 
 .subscrib__form-field {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscrib__form-field {
+    margin-bottom: 0;
+  }
 }
 
 .subscrib__input {
