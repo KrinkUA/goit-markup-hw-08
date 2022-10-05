@@ -34,15 +34,21 @@
   }
 }
 
+.portfolio__item {
+  display: flex;
+}
+
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  // display: block;
 
   background: var(--light-bg-color);
   transition: box-shadow var(--anim-main);
@@ -79,6 +85,7 @@
 }
 
 .subcat__contant {
+  flex-grow: 1;
   padding: 20px 24px;
 
   width: 450px;
